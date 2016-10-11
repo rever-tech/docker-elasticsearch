@@ -39,6 +39,9 @@ RUN useradd -ms /bin/bash elasticsearch
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
+RUN /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
+RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
+
 EXPOSE 9200 9300
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["elasticsearch"]
