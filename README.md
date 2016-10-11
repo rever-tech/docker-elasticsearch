@@ -13,7 +13,7 @@ $ docker build -t <your_image_name_here>[:<tag name>] .
 ```
 Example: Build an image from this Dockerfile with name rever/elasticsearch and tag latest
 ```sh
-$ docker build -t rever/ssdb:latest .
+$ docker build -t rever/elasticsearch:latest .
 ```
 
 ### Run service
